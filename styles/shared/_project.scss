@@ -48,6 +48,11 @@ text {
 .body {
   max-width:100%;
 }
+
+.chart, .chart .overlay {
+  pointer-events:none !important;
+}
+
 .chart .c3-circle {
   stroke-width: 4;
 }

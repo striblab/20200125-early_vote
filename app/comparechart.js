@@ -24,7 +24,7 @@ class compareChart {
         data: {
               // x: 'x',
               columns: [
-                  ['votes', 235808, 678336, 637581, 0]
+                  ['votes', 235808, 678336, 637581, 4462]
               ],
           type: 'bar',
           labels: {
@@ -60,7 +60,7 @@ class compareChart {
                   },
               x: {
                 type: 'category',
-                categories: ["2014","2016","2018","2020"],
+                categories: ["2014","2016","2018","2020 Primary"],
                 padding: {right: 0, left: 0},
                       tick: {
                     //    rotate: -75,

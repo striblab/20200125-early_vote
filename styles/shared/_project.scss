@@ -102,13 +102,20 @@ text {
       padding-right: 0.5em;
  }
 }
-#chart .c3-circles-2016, #chart .c3-circles-2014 {
+#chart .c3-circles-2016, #chart .c3-circles-2014, #chart .c3-circles-2018 {
   display: none;
 }
-.c3-target-2016 .c3-line, .c3-target-2014 .c3-line {
+.c3-target-2016 .c3-line, .c3-target-2014 .c3-line, .c3-target-2018 .c3-line {
   stroke-dasharray: 5,5;
   stroke-width: 3px !important;
 }
+
+.c3-circle {
+  stroke: black;
+  stroke-width: 1px !important;
+  fill: white !important;
+  }
+
 p {
   font-size:15px;
 }

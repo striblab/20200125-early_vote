@@ -39,10 +39,10 @@ class Chart {
           },
           point: {
               show: true,
-              r: function(d) { if (d.x == 6 || d.x == 5 || d.x == 4 || d.x == 3 || d.x == 2 || d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
+              r: function(d) { if (d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
           },
           color: {
-              pattern: ['#DDDDDD','#999999','#aaaaaa','#8b62a8']
+              pattern: ['#eeeeee','#CCC','#969696','#8b62a8']
           },
           axis: {
                 // rotated: true,
@@ -58,7 +58,7 @@ class Chart {
                   },
               x: {
                 type: 'category',
-                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Feb. 29-Mar. 2'],
+                categories: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Election week'],
                 padding: {right: 0, left: 0},
                       tick: {
                        rotate: -75,

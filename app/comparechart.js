@@ -24,13 +24,20 @@ class compareChart {
         data: {
               // x: 'x',
               columns: [
-                  ['votes', 235808, 678336, 637581, 4462]
+                  // ['votes', 235808, 678336, 637581, 10358],
+                  ['votes', 8777, 1578]
               ],
           type: 'bar',
           labels: {
               format: {
                   'votes': d3.format(',')
               }
+          },
+          color: function (color, d) {
+            switch (d.x) {
+                case 0 : return '#556E7F';
+                case 1 : return '#9E403C';
+            }
           }
         },
           tooltip: {
@@ -43,24 +50,22 @@ class compareChart {
             //   show: true,
             //   r: function(d) { if (d.x == 2018) { return 6;} else { return 0; } }
           },
-          color: {
-              pattern: ['#8b62a8']
-          },
           axis: {
                 // rotated: true,
                 y: {
-                      max: 720000,
+                      max: 10000,
                       min: 0,
                       padding: {bottom: 0, top: 0},
                       tick: {
                        count: 4,
-                       values: [0,140000,280000,420000,560000,720000],
+                       values: [0,5000,10000],
                        format: d3.format(',')
                       }
                   },
               x: {
                 type: 'category',
-                categories: ["2014","2016","2018","2020 Primary"],
+                // categories: ["2014","2016","2018","2020 Primary"],
+                categories: ["DFL","GOP"],
                 padding: {right: 0, left: 0},
                       tick: {
                     //    rotate: -75,

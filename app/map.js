@@ -109,11 +109,12 @@ class Map {
         $(".tooltip").attr('style','font-family: "Benton Sans", Helvetica, Arial, sans-serif; background-color: #ffffff !important; height: auto !important; width: auto !important; color:#000000 !important; padding: 10px !important; opacity:1 !important; border-radius: 0 !important; border: 1px solid #000000 !important; font-size: 13px !important;');
         $(".tooltip").addClass("thisTip");
 
-    var aspect = 500 / 550, chart = $(self.target + " svg");
-      var targetWidth = chart.parent().width();
-      chart.attr("width", targetWidth);
-      chart.attr("height", targetWidth / aspect);
-      if ($(window).width() <= 520) { $(self.target + " svg").attr("viewBox","0 0 500 550"); }
+    var aspect = 500 / 550;
+    var chart = $(self.target + " svg");
+    var targetWidth = chart.parent().width();
+    chart.attr("width", targetWidth);
+    chart.attr("height", targetWidth / aspect);
+    if ($(window).width() <= 520) { $(self.target + " svg").attr("viewBox","0 0 500 550"); }
 
     $(window).on("resize", function() {
       targetWidth = chart.parent().width();

@@ -42,7 +42,7 @@ class Chart {
               r: function(d) { if (d.x == 1 || d.x == 0) { return 4; } else { return 0; } }
           },
           color: {
-              pattern: ['#eeeeee','#CCC','#969696','#8b62a8']
+              pattern: ['#eeeeee','#CCC','#969696','#7D739C']
           },
           axis: {
                 // rotated: true,

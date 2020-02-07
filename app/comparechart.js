@@ -25,7 +25,7 @@ class compareChart {
               // x: 'x',
               columns: [
                   // ['votes', 235808, 678336, 637581, 10358],
-                  ['votes', 8777, 1578]
+                  ['votes', 14516, 2678]
               ],
           type: 'bar',
           labels: {
@@ -53,12 +53,12 @@ class compareChart {
           axis: {
                 // rotated: true,
                 y: {
-                      max: 10000,
+                      max: 20000,
                       min: 0,
                       padding: {bottom: 0, top: 0},
                       tick: {
                        count: 4,
-                       values: [0,5000,10000],
+                       values: [0,5000,10000,15000,20000],
                        format: d3.format(',')
                       }
                   },

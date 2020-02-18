@@ -30,7 +30,19 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
   @import 'shared/_project';
 }
 
-d3-tooltip, #d3-tooltip-0, .thisTip, .tooltip {
+.elexLogo img {
+  width: 50px;
+}
+
+.elexLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.d3-tooltip, #d3-tooltip-0, .thisTip, .tooltip {
   display:none;
   font-family: "Benton Sans", Helvetica, Arial, sans-serif;
   background-color: #ffffff !important;

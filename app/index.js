@@ -86,7 +86,7 @@ import Odometer from 'odometer';
     chart4.render();
     map.render();
 
-    const VOTE_COUNT = 25459;
+    const VOTE_COUNT = 36726 ;
 
     // Make odometer
     let el = document.querySelector('.odometer');
